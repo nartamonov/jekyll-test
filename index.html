@@ -5,6 +5,6 @@ description: Test
 
 <ul>
 {% for cosigner in site.data %}
-  <li>{{ cosigner }} <a href="{{ cosigner.url }}">{{ cosigner.name }}</a></li>
+  <li><a href="{{ cosigner[1].url }}">{{ cosigner[1].name }}</a></li>
 {% endfor %}
 </ul>
